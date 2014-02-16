@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVCMusicStore.Models
 {
@@ -7,6 +8,9 @@ namespace MVCMusicStore.Models
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
+
+        public string HomeTown { get; set; }
+        public DateTime? BirthDate { get; set; }
     }
 
     public class ManageUserViewModel

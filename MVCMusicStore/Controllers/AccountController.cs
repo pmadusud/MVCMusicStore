@@ -265,7 +265,12 @@ namespace MVCMusicStore.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser() { UserName = model.UserName };
+                var user = new ApplicationUser() 
+                {
+                    UserName = model.UserName,
+                    BirthDate = model.BirthDate,
+                    HomeTown = model.HomeTown
+                };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

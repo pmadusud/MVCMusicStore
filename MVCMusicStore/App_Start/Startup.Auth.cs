@@ -28,11 +28,11 @@ namespace MVCMusicStore
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "433051106828072",
+               appSecret: "631ef08bd83f58bea62078bcc43b4c25");
 
-            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication();
         }
     }
 }
